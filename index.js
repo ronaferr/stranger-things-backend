@@ -19,7 +19,7 @@ app.use(cors());
 
 const { UPSIDEDOWN_MODE } = process.env;
 
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE;
+const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
